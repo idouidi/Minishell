@@ -1,0 +1,29 @@
+Tuto links:
+https://segfault42.github.io/posts/minishell/
+
+https://brennan.io/2015/01/16/write-a-shell-in-c/
+
+https://www.cs.purdue.edu/homes/grr/SystemsProgrammingBook/Book/Chapter5-WritingYourOwnShell.pdf
+
+#############			INSTALL 			############# 
+MAC :
+ - brew install readline
+ - brew link --force readline
+ - export LDFLAGS="-L/Users/idouidi/.brew/opt/readline/lib"
+ - export CPPFLAGS="-I/Users/idouidi/.brew/opt/readline/include"
+ - activer les flags dans le MAKEFILE
+
+LINUX:
+- install readline
+- desactiver la partie des flags MAC
+#############			TO DO			#########################
+
+FIXE RDOC:
+-  les priorite de redirection de l'entree standard si le RDOC
+
+FIXE EXPORT:
+- chaque mot dans l'initiation d'une variable d'environemment correspond a un argument
+par exemple  (export toto="vt tty      p" ===> vt tty p; echo wow $toto wow ====> wow vt tty      p wow
+
+version minishell claqué sur bash-3.2
+docker run -it bash:3.2
